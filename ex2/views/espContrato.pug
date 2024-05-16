@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-black
+        h1 Contrato #{contrato._id}
+      
+      .w3-container
+        ul.w3-ul.w3-card-4(style="width:70%")
+          li
+            b Número de Anúncio:
+            |  #{contrato.nAnuncio}
+          li
+            b Tipo Procedimento:
+            |  #{contrato.tipoprocedimento}
+          li
+            b Objeto de Contrato:
+            |  #{contrato.objectoContrato}
+          li
+            b Data de Publicação:
+            |  #{contrato.dataPublicacao}
+          li
+            b Data de Celebração de Contrato:
+            |  #{contrato.dataCelebracaoContrato}
+          li
+            b Preço Contratual(€):
+            |  #{contrato.precoContratual}
+          li
+            b Prazo de Execução:
+            |  #{contrato.prazoExecucao}
+          li
+            b NIPC:
+            |  #{contrato.NIPC_entidade_comunicante}
+          li
+            b Entidade Comunicadora:
+            |  #{contrato.entidade_comunicante}
+          li
+            b Fundamentação:
+            |  #{contrato.fundamentacao}
+      
+      footer.w3-container.w3-black
+        address Gerado para o Teste - #[a(href="/") Voltar Página Inicial]
